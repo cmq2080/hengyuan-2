@@ -1,34 +1,32 @@
-<!-- 欢迎使用 衡院-2 CMS前端模板。本模板使用HBuilder编写 -->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- 欢迎使用 衡院-2 CMS前端模板。本模板使用VS Code编写 -->
+<!DOCTYPE html>
+<html lang="zh_CN">
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<link rel="stylesheet" type="text/css" href="assets/css/admin/init.css" />
-		<link rel="stylesheet" type="text/css" href="assets/css/admin/index.css" />
-		<!--<link rel="stylesheet" type="text/css" href="assets/plugins/bootstrap-3.3.7-dist/css/bootstrap.css"/>-->
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="assets/css/admin/init.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/admin/index.css">
 		
 		<title>后台管理</title>
 		
-		<script type="text/javascript" src="assets/js/jquery-1.8.3.min.js" ></script>
+		<script type="text/javascript" src="assets/js/jquery-2.1.4.min.js"></script>
 		<script type="text/javascript" src="assets/js/common.js"></script>
 		<!--<script type="text/javascript" src="assets/js/ajaxfileupload.js"></script>-->
 		<!--<script type="text/javascript" src="assets/js/sweetalert-2.1.0.min.js"></script>-->
 		<!--<script type="text/javascript" src="assets/js/vue-2.5.16.min.js"></script>-->
-		<!--<script type="text/javascript" src="assets/plugins/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>-->
 		<!--<script type="text/javascript" src="assets/plugins/My97DatePicker-4.8/WdatePicker.js" ></script>-->
 		<!--<script type="text/javascript" src="assets/plugins/kindeditor-4.1.11/kindeditor.js"></script>-->
 		<!--<script type="text/javascript" src="assets/plugins/kindeditor-4.1.11/lang/zh_CN.js"></script>-->
 	</head>
 	<body>
-		<div class="page">
-			<div class="sidebar">
+		<div class="hy-page">
+			<div class="hy-sidebar">
 				<h2>网站后台管理</h2>
 				<p>欢迎，<span>dsafds</span></p>
 				<p>
-					<a href="#">修改信息</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+					<a href="#">修改信息</a><span class="hy-col-space">|</span>
 					<a href="#">登出</a>
 				</p>
-				<ul class="menu">
+				<ul class="hy-menu">
 					<li data="" class="current">
 						<a>用户管理</a>
 					</li>
@@ -40,18 +38,18 @@
 					</li>
 				</ul>
 			</div>
-			<div class="content">
-				<h2 class="title-text">后台管理</h2>
-				<div class="topic">
-					<a class="btn" href="#">添加</a>
-					<a class="btn" href="#">批量删除</a>
+			<div class="hy-content">
+				<h2 class="hy-title-text">后台管理</h2>
+				<div class="hy-topic">
+					<a class="hy-btn" href="#">添加</a>
+					<a class="hy-btn" href="#">批量删除</a>
 				</div>
 				
 				<div>
-					<table class="main-table" cellspacing="0">
+					<table class="hy-main-table" cellspacing="0">
 						<thead>
 							<tr>
-								<th><input type="checkbox" name="dataid" /></th>
+								<th><input type="checkbox" class="dataid" name="dataid" /></th>
 								<th>用户名</th>
 								<th>密码</th>
 								<th>真实姓名</th>
@@ -110,12 +108,12 @@
 					</table>
 				</div>
 				
-				<form action="" method="post">
-					<table class="form-table">
+				<form class="hy-form" action="" method="post">
+					<table class="hy-form-table">
 						<tr><td>联系人姓名</td><td><input type="text" name="linkman" /></td></tr>
 						<tr><td>联系电话</td><td><input type="text" name="telephone" /></td></tr>
 						<tr><td></td><td></td></tr>
-						<tr><td colspan="2"><input type="button" class="btn" value="提交" /><input type="button" class="btn" value="返回" /></td></tr>
+						<tr><td colspan="2"><input type="button" class="hy-btn" value="提交" /><input type="button" class="hy-btn" value="返回" /></td></tr>
 					</table>
 				</form>
 			</div>
