@@ -45,12 +45,12 @@ $(function(){
 	/*
 	 * ******************************** 后台 ********************************
 	 */
-	var e_tr=$(".main-table tbody tr");
-	for(var i=0;i<e_tr.length;i++){
-		if(i%2!=0){
-			$(e_tr[i]).css({"background":"#ECECEC"});
-		}
-	}
+	// var e_tr=$(".main-table tbody tr");
+	// for(var i=0;i<e_tr.length;i++){
+	// 	if(i%2!=0){
+	// 		$(e_tr[i]).css({"background":"#ECECEC"});
+	// 	}
+	// }
 	
 	$(".hy-main-table input.id").on("click", function(){
 		if($(this).is(":checked")){

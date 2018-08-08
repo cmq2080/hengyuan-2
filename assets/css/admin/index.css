@@ -24,6 +24,7 @@
 .hy-content .hy-main-table{width: 100%;text-align: center;}
 .hy-main-table thead{background: #E0E0E0;}
 .hy-main-table thead th{padding: 10px;}
+.hy-main-table tbody tr:nth-child(even){background: #E0E0E0;}/*隔行变色*/
 .hy-main-table tbody td{padding: 10px 0;}
 .hy-main-table tbody td a{font-size: 13px;}
 .hy-main-table tbody td a:hover{color: #000000;text-decoration: underline;}
