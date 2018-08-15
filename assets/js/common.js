@@ -87,14 +87,14 @@ $(function () {
 	/*
 	 * ******************************** 前台 ********************************
 	 */
-	var html_height = parseInt($("html").css("height"));
-	var header_height = $(".header").outerHeight(true);
-	var footer_height = $(".footer").outerHeight(true);
-	var content_margins = parseInt($(".content").css("margin-top")) + parseInt($(".content").css("margin-bottom"));
-	var content_paddings = parseInt($(".content").css("padding-top")) + parseInt($(".content").css("padding-bottom"));
-	console.log(content_margins);
-	var height = html_height - header_height - footer_height - content_margins - content_paddings;
-	$(".content").css({ "min-height": height + "px" });
+	// var html_height = parseInt($("html").css("height"));
+	// var header_height = $(".header").outerHeight(true);
+	// var footer_height = $(".footer").outerHeight(true);
+	// var content_margins = parseInt($(".content").css("margin-top")) + parseInt($(".content").css("margin-bottom"));
+	// var content_paddings = parseInt($(".content").css("padding-top")) + parseInt($(".content").css("padding-bottom"));
+	// console.log(content_margins);
+	// var height = html_height - header_height - footer_height - content_margins - content_paddings;
+	// $(".content").css({ "min-height": height + "px" });
 
 	/*
 	 * ******************************** 后台 ********************************

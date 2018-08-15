@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 .hy-page{width: 100%;overflow: hidden;}
-.hy-page .hy-sidebar{width: 230px;height: 100%;overflow:hidden;background: url(../../images/admin/bg-body.gif) top left repeat-y;position: absolute;top: 0;left: 0;}
+.hy-page .hy-sidebar{width: 230px;height: 100%;overflow:hidden;background: url(../../images/admin/bg-body.gif) top left repeat-y;position: fixed;top: 0;left: 0;}
 .hy-sidebar h2{color:#FFFFFF;text-align: center;margin: 40px auto;}
 .hy-sidebar p{text-align: center;color: #FFFFFF;font-size: 12px;margin: 5px auto;}
 .hy-sidebar p span{color: #FFFFFF;font-size: 16px;font-style: italic;font-weight: bold;}
