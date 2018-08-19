@@ -37,3 +37,4 @@
 
 .hy-content .hy-form-table{width: auto;text-align: auto;}
 .hy-form-table tr td{padding:10px 20px 10px 0;}
+.hy-form-table tr td textarea{width:100%;min-height:4em;}
