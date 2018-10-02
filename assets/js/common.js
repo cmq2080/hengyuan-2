@@ -24,6 +24,7 @@ function verify(type, val) {
             return /^(\d{4})[-\/](\d{1}|0\d{1}|1[0-2])([-\/](\d{1}|0\d{1}|[1-2][0-9]|3[0-1]))*$/.test(val);
             break;
         default:
+            alert("未知类型");
             return false;
             break;
     }
@@ -63,15 +64,14 @@ function deleteOne(url, id, token) {
 
 // 获取选中记录的id
 function getSelected() {
-    var checkbox = $("input[type='checkbox'][name='id']");
+    var checkbox = $("input.hy-id[type='checkbox']");
     var id = '';
     for (var i = 0; i < checkbox.length; i++) {
         if (checkbox[i].checked) {
             id += checkbox[i].value + ",";
         }
     }
-    if (id.length == 0) {
-        alert("请选择有效信息");
+    if (id.length == 0) {// 没有选中，则返回false
         return false;
     }
     id = id.substr(0, id.length - 1);
@@ -82,6 +82,7 @@ function getSelected() {
 function deleteSelected(url, token) {
     var id = getSelected();
     if (id == false) {
+        alert("请选择有效信息");
         return false;
     }
     deleteOne(url, id, token);
@@ -112,8 +113,8 @@ $(function () {
     // }
 
     // 总checkbox选中事件
-    $(".hy-main-table input.dataid").on('click', function () {
-        var ele_id = $(".hy-main-table input.id");
+    $(".hy-main-table input.hy-data").on('click', function () {
+        var ele_id = $(".hy-main-table input.hy-id");
         if ($(this).is(":checked")) {
             $(ele_id).prop("checked", "checked");
         } else {
@@ -122,12 +123,12 @@ $(function () {
     });
 
     // 分checkbox选中事件
-    $(".hy-main-table input.id").on("click", function () {
+    $(".hy-main-table input.hy-id").on("click", function () {
         if ($(this).is(":checked")) {
             $(this).attr("checked", "checked");
         } else {
             $(this).removeAttr("checked");
-            $(".hy-main-table input.dataid").removeAttr("checked");
+            $(".hy-main-table input.hy-data").removeAttr("checked");
         }
     });
 });
