@@ -1,3 +1,4 @@
+// 返回上一页
 function back() {
     window.history.back(1);
 }
@@ -86,6 +87,16 @@ function deleteSelected(url, token) {
         return false;
     }
     deleteOne(url, id, token);
+}
+
+// 在表单数据中获取某个相对应的值
+function getFormValue(formData, name) {
+    for (var i = 0; i < formData.length; i++) {
+        if (formData[i].name == name) {
+            return formData[i].value;
+        }
+    }
+    return null;
 }
 
 
